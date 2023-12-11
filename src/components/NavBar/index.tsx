@@ -1,39 +1,43 @@
-import {
-  Image,
-  Button,
-  Flex,
-  Link,
-  Box,
-  ListItem,
-  OrderedList,
-} from '@chakra-ui/react';
+import { Flex, Box, Button } from "@chakra-ui/react";
 
 export const NavBar = () => {
   return (
     <>
-      <Flex
-        alignItems="center"
-        justifyContent="space-between"
-        background="0,0,0,0,0"
-      >
-        <Image src="/testIcon.png" alt="iconImage" w={100} h={100} />
-        <Flex alignItems="center">
-          <OrderedList display="flex" paddingRight={5} color="white">
-            <Link href="#" paddingLeft="30px">
-              <ListItem>a</ListItem>
-            </Link>
-            <Link href="#" paddingLeft="30px">
-              <ListItem>b</ListItem>
-            </Link>
-            <Link href="#" paddingLeft="30px">
-              <ListItem>c</ListItem>
-            </Link>
-            <Link href="#" paddingLeft="30px">
-              <ListItem>d</ListItem>
-            </Link>
-          </OrderedList>
-          <Button>test</Button>
-        </Flex>
+      <Flex justifyContent="space-around" margin="4rem">
+        <Button
+          bgImage="/zero.png"
+          bgPosition="center"
+          bgRepeat="no-repeat"
+          bgSize="cover"
+          width="3rem"
+          height="4rem"
+          _hover={{ hover: "none" }}
+          _active={{ active: "none" }}
+        ></Button>
+        <Box>
+          <Button
+            padding="1.2rem"
+            bg="white"
+            fontSize="18px"
+            margin="10px"
+            _hover={{ hover: "none" }}
+            _active={{ active: "none" }}
+          >
+            Links
+          </Button>
+          <Button
+            padding="1.2rem"
+            bg="white"
+            borderColor="#6E07F3"
+            color="#6E07F3"
+            borderWidth="2px"
+            fontSize="18px"
+            borderRadius="99999px"
+            _hover={{ bg: "#6E07F3", borderColor: "#6E07F3", color: "white" }}
+          >
+            Me envie uma mensagem
+          </Button>
+        </Box>
       </Flex>
     </>
   );
