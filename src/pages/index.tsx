@@ -7,14 +7,15 @@ export default function Home() {
   const { showLoading } = useLoading();
   return (
     <>
-      <Box bg="white" h="100vh">
-        {showLoading ? <Loading /> : <NavBar />}
-        <Flex alignItems="center" justifyContent="center">
-          <Heading as="h1" size="4xl">
-            Under Construction
-          </Heading>
-        </Flex>
-      </Box>
+      <Flex
+        bg="white"
+        h="100vh"
+        flexDir="column"
+        alignContent="center"
+        justifyItems="center"
+      >
+        <Box margin="2rem">{showLoading ? <Loading /> : <NavBar />}</Box>
+      </Flex>
     </>
   );
 }
