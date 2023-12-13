@@ -3,7 +3,7 @@ import { Flex, Box, Button } from "@chakra-ui/react";
 export const NavBar = () => {
   return (
     <>
-      <Flex justifyContent="space-around">
+      <Flex justifyContent="space-around" margin="2rem">
         <Button
           bgImage="/zero.png"
           bgPosition="center"
