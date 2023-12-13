@@ -1,7 +1,8 @@
 import { Loading } from "../components/Loading";
-import { Box, Flex, Heading } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import { NavBar } from "../components/NavBar";
 import { useLoading } from "../hooks/use-loading";
+import { Content } from "../components/Content";
 
 export default function Home() {
   const { showLoading } = useLoading();
@@ -9,12 +10,11 @@ export default function Home() {
     <>
       <Flex
         bg="white"
-        h="100vh"
         flexDir="column"
         alignContent="center"
         justifyItems="center"
       >
-        <Box margin="2rem">{showLoading ? <Loading /> : <NavBar />}</Box>
+        <Box>{showLoading ? <Loading /> : <Content />}</Box>
       </Flex>
     </>
   );
