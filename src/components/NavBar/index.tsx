@@ -1,41 +1,52 @@
-import { Flex, Box, Button } from "@chakra-ui/react";
+import { Flex, Box, Button, Image, Text, Link } from "@chakra-ui/react";
 
 export const NavBar = () => {
   return (
     <>
-      <Flex justifyContent="space-around" margin="3rem">
-        <Button
-          bgImage="/zero.png"
-          bgPosition="center"
-          bgRepeat="no-repeat"
-          bgSize="cover"
-          width="3rem"
-          height="4rem"
-          _hover={{ hover: "none" }}
-          _active={{ active: "none" }}
-        ></Button>
+      <Flex
+        w="100%"
+        h="6rem"
+        bgColor="transparent"
+        justifyContent="space-around"
+        alignItems="center"
+      >
+        <Image src="logo_t2s.png" alt="logo_t2s" maxH="4rem" maxW="8rem" />
         <Box>
           <Button
-            padding="1.2rem"
-            bg="white"
-            fontSize="18px"
-            margin="10px"
-            _hover={{ hover: "none" }}
-            _active={{ active: "none" }}
+            fontWeight="bold"
+            fontSize="20px"
+            color="white"
+            bgColor="transparent"
+            _hover={{ background: "#1D85F5", boxShadow: "lg" }}
           >
-            Links
+            <Link href="#sobre">Sobre nos</Link>
           </Button>
           <Button
-            padding="1.2rem"
-            bg="white"
-            borderColor="#6E07F3"
-            color="#6E07F3"
-            borderWidth="2px"
-            fontSize="18px"
-            borderRadius="99999px"
-            _hover={{ bg: "#6E07F3", borderColor: "#6E07F3", color: "white" }}
+            fontWeight="bold"
+            fontSize="20px"
+            color="white"
+            bgColor="transparent"
+            _hover={{ background: "#1D85F5", boxShadow: "lg" }}
           >
-            Me envie uma mensagem
+            <Link href="#clientes">Clientes</Link>
+          </Button>
+          <Button
+            fontWeight="bold"
+            fontSize="20px"
+            color="white"
+            bgColor="transparent"
+            _hover={{ background: "#1D85F5", boxShadow: "lg" }}
+          >
+            <Link href="#cadastro">Cadastro</Link>
+          </Button>
+          <Button
+            fontWeight="bold"
+            fontSize="20px"
+            color="white"
+            bgColor="transparent"
+            _hover={{ background: "#1D85F5", boxShadow: "lg" }}
+          >
+            <Link href="#contato">Contato</Link>
           </Button>
         </Box>
       </Flex>

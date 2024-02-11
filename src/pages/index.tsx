@@ -9,7 +9,9 @@ export default function Home() {
   return (
     <>
       <Flex
-        bg="white"
+        bg="linear-gradient(20deg, rgba(50,100,255,1) 38%, rgba(0,180,232,1) 100%)"
+        h="100vh"
+        display="block"
         flexDir="column"
         alignContent="center"
         justifyItems="center"
